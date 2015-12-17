@@ -1,0 +1,36 @@
+{
+  "name": "posthtml-alt-always",
+  "version": "1.0.0",
+  "description": "Always add alt attribute for images that don't have it (accessibility reasons)",
+  "keywords": [
+    "posthtml",
+    "html",
+    "posthtml-plugin",
+    "alt",
+    "images",
+    "accessibility",
+    "alternative text"
+  ],
+  "author": "Ismael Martínez <ismael@isma.uy>",
+  "license": "CC0-1.0",
+  "repository": "ismamz/posthtml-alt-always",
+  "homepage": "https://github.com/ismamz/posthtml-alt-always#readme",
+  "bugs": "https://github.com/ismamz/posthtml-alt-always/issues",
+  "dependencies": {
+    "posthtml": "^0.8.0"
+  },
+  "devDependencies": {
+    "eslint": "^1.10.3",
+    "tap-spec": "^4.1.1",
+    "tape": "^4.2.2"
+  },
+  "scripts": {
+    "lint": "eslint . --ignore-path .gitignore",
+    "tape": "tape test.js | tap-spec",
+    "test": "npm run lint && npm run tape"
+  },
+  "engines": {
+    "iojs": ">=2.0.0",
+    "node": ">=0.12.0"
+  }
+}
