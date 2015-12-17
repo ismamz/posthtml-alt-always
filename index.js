@@ -2,10 +2,8 @@ var posthtml = require('posthtml');
 
 module.exports = function () {
 	return function altAlways(tree) {
-		tree.match([{ tag: 'img' }], function(node) {
-			if (!node.attrs.alt){
-				node.attrs.alt = true;
-			}
+		tree.match({ tag: 'img', attrs: { alt: false }}, function(node) {
+			node.attrs.alt = true;
 			return node;
 		});
 	};
