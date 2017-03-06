@@ -21,7 +21,6 @@
   },
   "devDependencies": {
     "eslint": "^1.10.3",
-    "posthtml": "^0.8.1",
     "tap-spec": "^4.1.1",
     "tape": "^4.2.2"
   },
